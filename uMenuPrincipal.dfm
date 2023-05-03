@@ -378,7 +378,6 @@ object Form1: TForm1
         Width = 170
         Height = 41
         Align = alClient
-        Caption = 'SAIR'
         Flat = True
         Font.Charset = ANSI_CHARSET
         Font.Color = clWhite
@@ -545,9 +544,6 @@ object Form1: TForm1
       Color = 5460819
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 112
-      ExplicitTop = 16
-      ExplicitWidth = 185
       object Label5: TLabel
         Left = 0
         Top = 0
@@ -574,10 +570,6 @@ object Form1: TForm1
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 112
-      ExplicitTop = 64
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       object SpeedButton2: TSpeedButton
         AlignWithMargins = True
         Left = 2
@@ -683,10 +675,6 @@ object Form1: TForm1
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 3
-    ExplicitLeft = 352
-    ExplicitTop = 288
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object Image1: TImage
       Left = 0
       Top = 0
