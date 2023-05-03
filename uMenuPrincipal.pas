@@ -35,6 +35,23 @@ type
     Action2: TAction;
     Action3: TAction;
     SplitView2: TSplitView;
+    Panel9: TPanel;
+    Label5: TLabel;
+    FlowPanel1: TFlowPanel;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    SpeedButton4: TSpeedButton;
+    SpeedButton5: TSpeedButton;
+    SpeedButton6: TSpeedButton;
+    ImageList2: TImageList;
+    ActionList2: TActionList;
+    Action4: TAction;
+    Action5: TAction;
+    Action6: TAction;
+    Action7: TAction;
+    Action8: TAction;
+    Panel10: TPanel;
+    Image1: TImage;
     procedure imgLogoBrancaMouseEnter(Sender: TObject);
     procedure imgLogoBrancaMouseLeave(Sender: TObject);
     procedure imgLogoAmarelaClick(Sender: TObject);
@@ -45,6 +62,11 @@ type
     procedure Action2Execute(Sender: TObject);
     procedure Action3Execute(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
+    procedure Action4Execute(Sender: TObject);
+    procedure Action5Execute(Sender: TObject);
+    procedure Action6Execute(Sender: TObject);
+    procedure Action7Execute(Sender: TObject);
+    procedure Action8Execute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -60,7 +82,7 @@ implementation
 
 procedure TForm1.Action1Execute(Sender: TObject);
 begin
-//
+  SplitView2.Open;
 end;
 
 procedure TForm1.Action2Execute(Sender: TObject);
@@ -69,6 +91,31 @@ begin
 end;
 
 procedure TForm1.Action3Execute(Sender: TObject);
+begin
+//
+end;
+
+procedure TForm1.Action4Execute(Sender: TObject);
+begin
+  SplitView2.Close;
+end;
+
+procedure TForm1.Action5Execute(Sender: TObject);
+begin
+//
+end;
+
+procedure TForm1.Action6Execute(Sender: TObject);
+begin
+//
+end;
+
+procedure TForm1.Action7Execute(Sender: TObject);
+begin
+//
+end;
+
+procedure TForm1.Action8Execute(Sender: TObject);
 begin
 //
 end;
