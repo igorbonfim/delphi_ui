@@ -1,9 +1,9 @@
-object Form1: TForm1
+object FrmMenuPrincipal: TFrmMenuPrincipal
   Left = 0
   Top = 0
   Align = alClient
   BorderStyle = bsNone
-  Caption = 'Form1'
+  Caption = 'FrmMenuPrincipal'
   ClientHeight = 768
   ClientWidth = 1024
   Color = clBtnFace
@@ -145,13 +145,14 @@ object Form1: TForm1
       end
     end
     object Panel5: TPanel
-      Left = 771
+      Left = 683
       Top = 0
       Width = 253
       Height = 75
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 1
+      ExplicitLeft = 771
       object Panel6: TPanel
         Left = 165
         Top = 0
@@ -308,6 +309,42 @@ object Form1: TForm1
           ExplicitLeft = 61
           ExplicitWidth = 101
         end
+      end
+    end
+    object Panel11: TPanel
+      Left = 936
+      Top = 0
+      Width = 88
+      Height = 75
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 2
+      ExplicitLeft = 955
+      ExplicitTop = 6
+      object imgLogout: TImage
+        Left = 0
+        Top = 0
+        Width = 88
+        Height = 75
+        Align = alClient
+        Center = True
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000300000
+          003008060000005702F987000000017352474200AECE1CE90000010F49444154
+          78DAEDD9CD0DC2300C05E066026013360036600498004680492813B042BB114C
+          105CC181439BE6C7A6CFE02745BDC5EF3B54AA6A57298F9BBA8001A62E200AF0
+          DE6FE971A0B3A433679CDBD0393BE71A31C0BBFC8DB1745F36A58810A0BB7825
+          0C6809B0960278E1F25DEE04587C054083585E78EE7B0D60006D00EE18A03434
+          E64257EF3503BA39752E020550E52290005908344032021190846003087CFC45
+          219001510874C02842032088D002B8D2F89D56C060790D80607974C068795640
+          6E06E051E55101D1E5110149E5D100C9E5910059E55100756E790840690C901A
+          F53FB60CF0B700A13CA87FD1EEEDA7574CBA977C1F8863F55AB3CE188BB7744E
+          A26B562D31C0D4510F78024EC72C404CAED45E0000000049454E44AE426082}
+        OnClick = imgLogoutClick
+        ExplicitLeft = 40
+        ExplicitTop = 16
+        ExplicitWidth = 105
+        ExplicitHeight = 105
       end
     end
   end

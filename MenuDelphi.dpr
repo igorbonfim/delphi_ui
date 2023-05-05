@@ -2,13 +2,14 @@ program MenuDelphi;
 
 uses
   Vcl.Forms,
-  uMenuPrincipal in 'uMenuPrincipal.pas' {Form1};
+  uMenuPrincipal in 'uMenuPrincipal.pas' {FrmMenuPrincipal},
+  uLogin in 'uLogin.pas' {FrmLogin};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmLogin, FrmLogin);
   Application.Run;
 end.

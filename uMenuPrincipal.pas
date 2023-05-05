@@ -6,10 +6,10 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
   Vcl.StdCtrls, Vcl.WinXCtrls, Vcl.CategoryButtons, Vcl.Buttons, System.Actions,
-  Vcl.ActnList, System.ImageList, Vcl.ImgList;
+  Vcl.ActnList, System.ImageList, Vcl.ImgList, Vcl.Menus;
 
 type
-  TForm1 = class(TForm)
+  TFrmMenuPrincipal = class(TForm)
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
@@ -52,6 +52,8 @@ type
     Action8: TAction;
     Panel10: TPanel;
     Image1: TImage;
+    Panel11: TPanel;
+    imgLogout: TImage;
     procedure imgLogoBrancaMouseEnter(Sender: TObject);
     procedure imgLogoBrancaMouseLeave(Sender: TObject);
     procedure imgLogoAmarelaClick(Sender: TObject);
@@ -67,6 +69,7 @@ type
     procedure Action6Execute(Sender: TObject);
     procedure Action7Execute(Sender: TObject);
     procedure Action8Execute(Sender: TObject);
+    procedure imgLogoutClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -74,53 +77,55 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FrmMenuPrincipal: TFrmMenuPrincipal;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.Action1Execute(Sender: TObject);
+uses uLogin;
+
+procedure TFrmMenuPrincipal.Action1Execute(Sender: TObject);
 begin
   SplitView2.Open;
 end;
 
-procedure TForm1.Action2Execute(Sender: TObject);
+procedure TFrmMenuPrincipal.Action2Execute(Sender: TObject);
 begin
 //
 end;
 
-procedure TForm1.Action3Execute(Sender: TObject);
+procedure TFrmMenuPrincipal.Action3Execute(Sender: TObject);
 begin
 //
 end;
 
-procedure TForm1.Action4Execute(Sender: TObject);
+procedure TFrmMenuPrincipal.Action4Execute(Sender: TObject);
 begin
   SplitView2.Close;
 end;
 
-procedure TForm1.Action5Execute(Sender: TObject);
+procedure TFrmMenuPrincipal.Action5Execute(Sender: TObject);
 begin
 //
 end;
 
-procedure TForm1.Action6Execute(Sender: TObject);
+procedure TFrmMenuPrincipal.Action6Execute(Sender: TObject);
 begin
 //
 end;
 
-procedure TForm1.Action7Execute(Sender: TObject);
+procedure TFrmMenuPrincipal.Action7Execute(Sender: TObject);
 begin
 //
 end;
 
-procedure TForm1.Action8Execute(Sender: TObject);
+procedure TFrmMenuPrincipal.Action8Execute(Sender: TObject);
 begin
 //
 end;
 
-procedure TForm1.imgLogoAmarelaClick(Sender: TObject);
+procedure TFrmMenuPrincipal.imgLogoAmarelaClick(Sender: TObject);
 begin
   if SplitView1.Opened then
     SplitView1.Close
@@ -128,36 +133,44 @@ begin
     SplitView1.Open;
 end;
 
-procedure TForm1.imgLogoBrancaMouseEnter(Sender: TObject);
+procedure TFrmMenuPrincipal.imgLogoBrancaMouseEnter(Sender: TObject);
 begin
   imgLogoBranca.Visible := false;
   imgLogoAmarela.Visible := true;
 end;
 
-procedure TForm1.imgLogoBrancaMouseLeave(Sender: TObject);
+procedure TFrmMenuPrincipal.imgLogoBrancaMouseLeave(Sender: TObject);
 begin
   imgLogoBranca.Visible := true;
   imgLogoAmarela.Visible := false;
 end;
 
-procedure TForm1.imgUsuarioAmareloClick(Sender: TObject);
+procedure TFrmMenuPrincipal.imgLogoutClick(Sender: TObject);
+begin
+  if Assigned(FrmMenuPrincipal)then
+    FreeAndNil(FrmMenuPrincipal);
+
+  FrmLogin.Show;
+end;
+
+procedure TFrmMenuPrincipal.imgUsuarioAmareloClick(Sender: TObject);
 begin
   ShowMessage('usuario');
 end;
 
-procedure TForm1.imgUsuarioAmareloMouseLeave(Sender: TObject);
+procedure TFrmMenuPrincipal.imgUsuarioAmareloMouseLeave(Sender: TObject);
 begin
   imgUsuarioBranco.Visible := true;
   imgUsuarioAmarelo.Visible := false;
 end;
 
-procedure TForm1.imgUsuarioBrancoMouseEnter(Sender: TObject);
+procedure TFrmMenuPrincipal.imgUsuarioBrancoMouseEnter(Sender: TObject);
 begin
   imgUsuarioBranco.Visible := false;
   imgUsuarioAmarelo.Visible := true;
 end;
 
-procedure TForm1.SpeedButton1Click(Sender: TObject);
+procedure TFrmMenuPrincipal.SpeedButton1Click(Sender: TObject);
 begin
   Application.Terminate;
 end;
