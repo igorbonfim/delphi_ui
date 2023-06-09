@@ -286,11 +286,18 @@ object FrmPDV: TFrmPDV
         end
       end
       object DBGrid1: TDBGrid
-        Left = 1
-        Top = 1
-        Width = 642
-        Height = 482
+        AlignWithMargins = True
+        Left = 11
+        Top = 21
+        Width = 622
+        Height = 459
+        Margins.Left = 10
+        Margins.Top = 20
+        Margins.Right = 10
         Align = alClient
+        BorderStyle = bsNone
+        DataSource = DataSource1
+        Options = [dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgTitleClick, dgTitleHotTrack]
         TabOrder = 1
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -7967,5 +7974,49 @@ object FrmPDV: TFrmPDV
     OnTimer = Timer1Timer
     Left = 585
     Top = 24
+  end
+  object FDMemTable1: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'Codigo'
+        DataType = ftInteger
+      end
+      item
+        Name = 'Nome'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'Qtd'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'Vlr Unitario'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'Subtotal'
+        DataType = ftString
+        Size = 20
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 440
+    Top = 248
+  end
+  object DataSource1: TDataSource
+    DataSet = FDMemTable1
+    Left = 664
+    Top = 280
   end
 end

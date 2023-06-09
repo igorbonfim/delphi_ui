@@ -5,7 +5,10 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
-  Vcl.StdCtrls, Vcl.Imaging.jpeg, Data.DB, Vcl.Grids, Vcl.DBGrids;
+  Vcl.StdCtrls, Vcl.Imaging.jpeg, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client;
 
 type
   TFrmPDV = class(TForm)
@@ -45,6 +48,8 @@ type
     Label14: TLabel;
     DBGrid1: TDBGrid;
     Timer1: TTimer;
+    FDMemTable1: TFDMemTable;
+    DataSource1: TDataSource;
     procedure imgEmpresaClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
