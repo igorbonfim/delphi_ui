@@ -345,18 +345,18 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
       end
     end
     object pnlPDV: TPanel
-      Left = 498
+      Left = 533
       Top = 0
-      Width = 185
+      Width = 150
       Height = 75
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 3
       object imgPDVAmarela: TImage
-        Left = 43
+        Left = 0
         Top = 0
-        Width = 142
-        Height = 75
+        Width = 150
+        Height = 54
         Align = alClient
         Center = True
         Picture.Data = {
@@ -393,10 +393,10 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
         ExplicitHeight = 105
       end
       object imgPDV: TImage
-        Left = 43
+        Left = 0
         Top = 0
-        Width = 142
-        Height = 75
+        Width = 150
+        Height = 54
         Cursor = crHandPoint
         Align = alClient
         Center = True
@@ -428,29 +428,27 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
         OnClick = imgPDVClick
         OnMouseEnter = imgPDVMouseEnter
         OnMouseLeave = imgPDVMouseLeave
-        ExplicitLeft = 48
-        ExplicitTop = 24
-        ExplicitWidth = 105
-        ExplicitHeight = 105
+        ExplicitLeft = -3
+        ExplicitWidth = 185
       end
       object lblPDV: TLabel
-        AlignWithMargins = True
-        Left = 3
-        Top = 25
-        Width = 37
-        Height = 47
+        Left = 0
+        Top = 54
+        Width = 150
+        Height = 21
         Margins.Top = 25
-        Align = alLeft
+        Align = alBottom
         Alignment = taCenter
         Caption = 'PDV'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'Segoe UI'
         Font.Style = []
         ParentFont = False
         OnClick = lblPDVClick
-        ExplicitHeight = 28
+        ExplicitTop = 58
+        ExplicitWidth = 30
       end
     end
   end
