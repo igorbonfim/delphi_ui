@@ -3,7 +3,8 @@ program MenuDelphi;
 uses
   Vcl.Forms,
   uMenuPrincipal in 'uMenuPrincipal.pas' {FrmMenuPrincipal},
-  uLogin in 'uLogin.pas' {FrmLogin};
+  uLogin in 'uLogin.pas' {FrmLogin},
+  uPDV in 'uPDV.pas' {FrmPDV};
 
 {$R *.res}
 

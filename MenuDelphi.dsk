@@ -1,31 +1,37 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'C:\Projetos Diversos\Altera Preço Custo Uniplus\Produtos.pas',0,1,53,51,154,0,0,,
-File_1=TSourceModule,'C:\Projetos Diversos\Altera Preço Custo Uniplus\DataModule.pas',0,1,1,15,9,0,0,,
-File_2=TSourceModule,'C:\Projetos Diversos\Altera Preço Custo Uniplus\PrecoCusto.pas',0,1,53,31,83,0,0,,
-File_3=TSourceModule,'C:\Projetos Diversos\Altera Preço Custo Uniplus\cArquivoIni.pas',0,1,21,54,49,0,0,,
-File_4=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\source\data\Data.DB.pas',0,1,6208,55,6223,0,0,,
-File_5=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\VCL\Vcl.Controls.pas',0,1,11168,1,11179,0,0,,
-File_6=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uPrincipal.pas',0,1,2591,1,2593,0,0,,
-File_7=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\Model\Udados.pas',0,1,5031,69,26,0,0,,
-File_8=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uConsReceber.pas',0,1,1,1,1,0,0,,
-File_9=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uOrcamento.pas',0,1,1,1,151,0,0,,
-File_10=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uAcesso.pas',0,1,201,48,220,0,0,,
-File_11=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uCadOrcamento.pas',0,1,599,2,601,0,0,,
-File_12=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uConsPagar.pas',0,1,135,11,173,0,0,,
-File_13=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uNFe.pas',0,1,1767,1,1769,0,0,,
+File_0=TSourceModule,'C:\Projetos Diversos\menu_delphi\uLogin.pas',0,1,70,1,1,0,0,,
+File_1=TSourceModule,'C:\Projetos Diversos\Altera Preço Custo Uniplus\Produtos.pas',0,1,53,51,154,0,0,,
+File_2=TSourceModule,'C:\Projetos Diversos\Altera Preço Custo Uniplus\DataModule.pas',0,1,1,15,9,0,0,,
+File_3=TSourceModule,'C:\Projetos Diversos\Altera Preço Custo Uniplus\PrecoCusto.pas',0,1,53,31,83,0,0,,
+File_4=TSourceModule,'C:\Projetos Diversos\Altera Preço Custo Uniplus\cArquivoIni.pas',0,1,21,54,49,0,0,,
+File_5=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\source\data\Data.DB.pas',0,1,6208,55,6223,0,0,,
+File_6=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\VCL\Vcl.Controls.pas',0,1,11168,1,11179,0,0,,
+File_7=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uPrincipal.pas',0,1,2591,1,2593,0,0,,
+File_8=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\Model\Udados.pas',0,1,5031,69,26,0,0,,
+File_9=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uConsReceber.pas',0,1,1,1,1,0,0,,
+File_10=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uOrcamento.pas',0,1,1,1,151,0,0,,
+File_11=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uAcesso.pas',0,1,201,48,220,0,0,,
+File_12=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uCadOrcamento.pas',0,1,599,2,601,0,0,,
+File_13=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uConsPagar.pas',0,1,135,11,173,0,0,,
+File_14=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uNFe.pas',0,1,1767,1,1769,0,0,,
 
 [Modules]
-Module0=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
-Count=1
+Module0=C:\Projetos Diversos\menu_delphi\uPDV.pas
+Module1=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
+Count=2
 EditWindowCount=1
+
+[C:\Projetos Diversos\menu_delphi\uPDV.pas]
+ModuleType=TSourceModule
 
 [C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
-ViewCount=1
-CurrentEditView=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
+ViewCount=2
+CurrentEditView=C:\Projetos Diversos\menu_delphi\uPDV.pas
 View0=0
+View1=1
 PercentageSizes=1
 Create=1
 Visible=1
@@ -57,14 +63,25 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 
 [View0]
 CustomEditViewType=TEditView
-Module=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
-CursorX=21
-CursorY=53
-TopLine=22
+Module=C:\Projetos Diversos\menu_delphi\uPDV.pas
+CursorX=9
+CursorY=41
+TopLine=30
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=Borland.FormDesignerView
+
+[View1]
+CustomEditViewType=TEditView
+Module=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
+CursorX=23
+CursorY=204
+TopLine=149
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
 
 [Watches]
 Count=0
@@ -204,8 +221,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=AlignWithMargins,
-ExpandedItems=Anchors=0,BorderIcons=0
+SelectedItem=Action,
+ExpandedItems=Anchors=0
 
 [frmDesignPreview]
 PercentageSizes=1

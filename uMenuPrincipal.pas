@@ -54,6 +54,10 @@ type
     Image1: TImage;
     Panel11: TPanel;
     imgLogout: TImage;
+    pnlPDV: TPanel;
+    imgPDV: TImage;
+    lblPDV: TLabel;
+    imgPDVAmarela: TImage;
     procedure imgLogoBrancaMouseEnter(Sender: TObject);
     procedure imgLogoBrancaMouseLeave(Sender: TObject);
     procedure imgLogoAmarelaClick(Sender: TObject);
@@ -70,6 +74,10 @@ type
     procedure Action7Execute(Sender: TObject);
     procedure Action8Execute(Sender: TObject);
     procedure imgLogoutClick(Sender: TObject);
+    procedure imgPDVClick(Sender: TObject);
+    procedure lblPDVClick(Sender: TObject);
+    procedure imgPDVMouseEnter(Sender: TObject);
+    procedure imgPDVMouseLeave(Sender: TObject);
   private
     { Private declarations }
   public
@@ -83,7 +91,7 @@ implementation
 
 {$R *.dfm}
 
-uses uLogin;
+uses uLogin, uPDV;
 
 procedure TFrmMenuPrincipal.Action1Execute(Sender: TObject);
 begin
@@ -153,6 +161,27 @@ begin
   FrmLogin.Show;
 end;
 
+procedure TFrmMenuPrincipal.imgPDVClick(Sender: TObject);
+begin
+  FrmPDV := TFrmPDV.Create(Self);
+  FrmPDV.ShowModal;
+  FrmPDV.Release;
+end;
+
+procedure TFrmMenuPrincipal.imgPDVMouseEnter(Sender: TObject);
+begin
+  lblPDV.Font.Color := clYellow;
+  imgPDV.Visible := false;
+  imgPDVAmarela.Visible := true;
+end;
+
+procedure TFrmMenuPrincipal.imgPDVMouseLeave(Sender: TObject);
+begin
+  lblPDV.Font.Color := clWhite;
+  imgPDV.Visible := true;
+  imgPDVAmarela.Visible := false;
+end;
+
 procedure TFrmMenuPrincipal.imgUsuarioAmareloClick(Sender: TObject);
 begin
   ShowMessage('usuario');
@@ -168,6 +197,11 @@ procedure TFrmMenuPrincipal.imgUsuarioBrancoMouseEnter(Sender: TObject);
 begin
   imgUsuarioBranco.Visible := false;
   imgUsuarioAmarelo.Visible := true;
+end;
+
+procedure TFrmMenuPrincipal.lblPDVClick(Sender: TObject);
+begin
+  imgPDVClick(Sender);
 end;
 
 procedure TFrmMenuPrincipal.SpeedButton1Click(Sender: TObject);
