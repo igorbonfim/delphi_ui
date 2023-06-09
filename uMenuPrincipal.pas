@@ -18,7 +18,7 @@ type
     Panel4: TPanel;
     Label1: TLabel;
     Label2: TLabel;
-    Panel5: TPanel;
+    pnlDadosUsuario: TPanel;
     Panel6: TPanel;
     imgUsuarioBranco: TImage;
     imgUsuarioAmarelo: TImage;
@@ -52,7 +52,7 @@ type
     Action8: TAction;
     Panel10: TPanel;
     Image1: TImage;
-    Panel11: TPanel;
+    pnlSair: TPanel;
     imgLogout: TImage;
     pnlPDV: TPanel;
     imgPDV: TImage;

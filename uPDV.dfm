@@ -13,6 +13,7 @@ object FrmPDV: TFrmPDV
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object pnlMenu: TPanel
@@ -197,7 +198,6 @@ object FrmPDV: TFrmPDV
     Color = 3487029
     ParentBackground = False
     TabOrder = 1
-    ExplicitTop = 478
   end
   object pnlDetalheRodape: TPanel
     AlignWithMargins = True
@@ -214,7 +214,6 @@ object FrmPDV: TFrmPDV
     Color = 14581528
     ParentBackground = False
     TabOrder = 2
-    ExplicitTop = 534
   end
   object Panel2: TPanel
     Left = 0
@@ -226,7 +225,6 @@ object FrmPDV: TFrmPDV
     Color = clWhite
     ParentBackground = False
     TabOrder = 3
-    ExplicitTop = 103
     object Panel3: TPanel
       AlignWithMargins = True
       Left = 360
@@ -241,9 +239,6 @@ object FrmPDV: TFrmPDV
       Color = clWhite
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 20
-      ExplicitWidth = 277
-      ExplicitHeight = 338
       object Panel6: TPanel
         Left = 1
         Top = 483
@@ -254,9 +249,54 @@ object FrmPDV: TFrmPDV
         Color = 14581528
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = 2
-        ExplicitTop = 266
-        ExplicitWidth = 665
+        object Label13: TLabel
+          AlignWithMargins = True
+          Left = 5
+          Top = 20
+          Width = 149
+          Height = 49
+          Margins.Left = 5
+          Margins.Top = 20
+          Align = alLeft
+          Caption = 'TOTAL A PAGAR:'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWhite
+          Font.Height = -21
+          Font.Name = 'Segoe UI Semilight'
+          Font.Style = []
+          ParentFont = False
+          ExplicitHeight = 30
+        end
+        object Label14: TLabel
+          AlignWithMargins = True
+          Left = 554
+          Top = 15
+          Width = 85
+          Height = 54
+          Margins.Top = 15
+          Align = alRight
+          Caption = '27,00'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWhite
+          Font.Height = -33
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+          ExplicitHeight = 45
+        end
+      end
+      object DBGrid1: TDBGrid
+        Left = 1
+        Top = 1
+        Width = 642
+        Height = 482
+        Align = alClient
+        TabOrder = 1
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
       end
     end
     object Panel4: TPanel
@@ -273,7 +313,6 @@ object FrmPDV: TFrmPDV
       Color = clWhite
       ParentBackground = False
       TabOrder = 1
-      ExplicitHeight = 338
       object Image1: TImage
         Left = 1
         Top = 57
@@ -7730,9 +7769,45 @@ object FrmPDV: TFrmPDV
         Color = 7434609
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = -20
-        ExplicitTop = 265
-        ExplicitWidth = 275
+        object Label10: TLabel
+          Left = 3
+          Top = 20
+          Width = 98
+          Height = 30
+          Caption = 'SUBTOTAL:'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWhite
+          Font.Height = -21
+          Font.Name = 'Segoe UI Semilight'
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label11: TLabel
+          Left = 169
+          Top = 27
+          Width = 17
+          Height = 21
+          Caption = 'R$'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWhite
+          Font.Height = -16
+          Font.Name = 'Segoe UI Semilight'
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label12: TLabel
+          Left = 198
+          Top = 12
+          Width = 85
+          Height = 45
+          Caption = '27,00'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWhite
+          Font.Height = -33
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
       end
       object Panel1: TPanel
         Left = 1
@@ -7744,7 +7819,6 @@ object FrmPDV: TFrmPDV
         Color = 13816530
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 275
         object Label3: TLabel
           AlignWithMargins = True
           Left = 3
@@ -7796,7 +7870,13 @@ object FrmPDV: TFrmPDV
         Align = alBottom
         BevelOuter = bvNone
         Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
         ParentBackground = False
+        ParentFont = False
         TabOrder = 3
         object Label4: TLabel
           AlignWithMargins = True
@@ -7813,8 +7893,6 @@ object FrmPDV: TFrmPDV
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 0
-          ExplicitTop = 0
           ExplicitWidth = 227
         end
         object Label5: TLabel
@@ -7823,15 +7901,71 @@ object FrmPDV: TFrmPDV
           Width = 56
           Height = 13
           Caption = 'Quantidade'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
         end
         object Label6: TLabel
           Left = 172
           Top = 48
-          Width = 56
+          Width = 64
           Height = 13
-          Caption = 'Quantidade'
+          Caption = 'Valor Unitario'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label7: TLabel
+          Left = 20
+          Top = 67
+          Width = 12
+          Height = 28
+          Caption = '6'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clHighlight
+          Font.Height = -20
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label8: TLabel
+          Left = 195
+          Top = 67
+          Width = 41
+          Height = 28
+          Caption = '4,50'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clHighlight
+          Font.Height = -20
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label9: TLabel
+          Left = 169
+          Top = 72
+          Width = 17
+          Height = 21
+          Caption = 'R$'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clHighlight
+          Font.Height = -16
+          Font.Name = 'Segoe UI Semilight'
+          Font.Style = []
+          ParentFont = False
         end
       end
     end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 585
+    Top = 24
   end
 end

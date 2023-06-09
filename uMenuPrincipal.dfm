@@ -144,7 +144,7 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
         end
       end
     end
-    object Panel5: TPanel
+    object pnlDadosUsuario: TPanel
       Left = 683
       Top = 0
       Width = 253
@@ -310,7 +310,7 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
         end
       end
     end
-    object Panel11: TPanel
+    object pnlSair: TPanel
       Left = 936
       Top = 0
       Width = 88
