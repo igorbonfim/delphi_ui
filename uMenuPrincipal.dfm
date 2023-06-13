@@ -112,7 +112,7 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
           AlignWithMargins = True
           Left = 3
           Top = 14
-          Width = 94
+          Width = 81
           Height = 23
           Margins.Top = 14
           Align = alTop
@@ -123,13 +123,12 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
           Font.Name = 'Tahoma'
           Font.Style = []
           ParentFont = False
-          ExplicitWidth = 81
         end
         object Label2: TLabel
           AlignWithMargins = True
           Left = 3
           Top = 40
-          Width = 94
+          Width = 27
           Height = 16
           Margins.Top = 0
           Align = alTop
@@ -140,7 +139,6 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
           Font.Name = 'Tahoma'
           Font.Style = []
           ParentFont = False
-          ExplicitWidth = 27
         end
       end
     end
@@ -272,9 +270,9 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
         TabOrder = 1
         object Label3: TLabel
           AlignWithMargins = True
-          Left = 3
+          Left = 108
           Top = 10
-          Width = 159
+          Width = 54
           Height = 19
           Margins.Top = 10
           Align = alTop
@@ -286,14 +284,12 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
           Font.Name = 'Tahoma'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 108
-          ExplicitWidth = 54
         end
         object Label4: TLabel
           AlignWithMargins = True
-          Left = 3
+          Left = 61
           Top = 32
-          Width = 159
+          Width = 101
           Height = 19
           Margins.Top = 0
           Align = alTop
@@ -305,8 +301,6 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
           Font.Name = 'Tahoma'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 61
-          ExplicitWidth = 101
         end
       end
     end
@@ -434,7 +428,7 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
       object lblPDV: TLabel
         Left = 0
         Top = 54
-        Width = 150
+        Width = 30
         Height = 21
         Margins.Top = 25
         Align = alBottom
@@ -447,8 +441,6 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
         Font.Style = []
         ParentFont = False
         OnClick = lblPDVClick
-        ExplicitTop = 58
-        ExplicitWidth = 30
       end
     end
   end
@@ -688,8 +680,8 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
       object Label5: TLabel
         Left = 0
         Top = 0
-        Width = 0
-        Height = 41
+        Width = 120
+        Height = 19
         Align = alClient
         Alignment = taCenter
         Caption = 'Sub. Menus NF-e'
@@ -699,8 +691,6 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        ExplicitWidth = 120
-        ExplicitHeight = 19
       end
     end
     object FlowPanel1: TFlowPanel

@@ -13,23 +13,22 @@ File_10=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uOrcamento.pas',0,1,1
 File_11=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uAcesso.pas',0,1,201,48,220,0,0,,
 File_12=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uCadOrcamento.pas',0,1,599,2,601,0,0,,
 File_13=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uConsPagar.pas',0,1,135,11,173,0,0,,
-File_14=TSourceModule,'D:\Sistema ERP - Fontes\Fontes\View\uNFe.pas',0,1,1767,1,1769,0,0,,
 
 [Modules]
-Module0=C:\Projetos Diversos\menu_delphi\uPDV.pas
-Module1=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
+Module0=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
+Module1=C:\Projetos Diversos\menu_delphi\uPDV.pas
 Count=2
 EditWindowCount=1
-
-[C:\Projetos Diversos\menu_delphi\uPDV.pas]
-ModuleType=TSourceModule
 
 [C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas]
 ModuleType=TSourceModule
 
+[C:\Projetos Diversos\menu_delphi\uPDV.pas]
+ModuleType=TSourceModule
+
 [EditWindow0]
 ViewCount=2
-CurrentEditView=C:\Projetos Diversos\menu_delphi\uPDV.pas
+CurrentEditView=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
 View0=0
 View1=1
 PercentageSizes=1
@@ -64,9 +63,9 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=C:\Projetos Diversos\menu_delphi\uPDV.pas
-CursorX=9
-CursorY=41
-TopLine=30
+CursorX=38
+CursorY=76
+TopLine=70
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -75,13 +74,13 @@ EditViewName=Borland.FormDesignerView
 [View1]
 CustomEditViewType=TEditView
 Module=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
-CursorX=23
-CursorY=204
-TopLine=149
+CursorX=34
+CursorY=166
+TopLine=153
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Projetos Diversos\menu_delphi\uMenuPrincipal.pas
+EditViewName=Borland.FormDesignerView
 
 [Watches]
 Count=0
@@ -221,8 +220,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Action,
-ExpandedItems=Anchors=0
+SelectedItem=Name,CustomHint
+ExpandedItems=Anchors=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0
 
 [frmDesignPreview]
 PercentageSizes=1

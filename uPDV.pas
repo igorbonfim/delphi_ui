@@ -8,7 +8,7 @@ uses
   Vcl.StdCtrls, Vcl.Imaging.jpeg, Data.DB, Vcl.Grids, Vcl.DBGrids,
   FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
-  FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.Stan.StorageBin;
 
 type
   TFrmPDV = class(TForm)
@@ -45,15 +45,21 @@ type
     Label11: TLabel;
     Label12: TLabel;
     Label13: TLabel;
-    Label14: TLabel;
+    lblTotalVenda: TLabel;
     DBGrid1: TDBGrid;
     Timer1: TTimer;
     FDMemTable1: TFDMemTable;
     DataSource1: TDataSource;
+    FDMemTable1Codigo: TIntegerField;
+    FDMemTable1Nome: TStringField;
+    FDMemTable1QTD: TIntegerField;
+    FDMemTable1ValorUnitario: TFloatField;
+    FDMemTable1ValorTotal: TFloatField;
     procedure imgEmpresaClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
   private
+    procedure CalculaTotalVenda;
     { Private declarations }
   public
     { Public declarations }
@@ -69,6 +75,23 @@ implementation
 procedure TFrmPDV.FormCreate(Sender: TObject);
 begin
   lblData.Caption := DateToStr(Date);
+  CalculaTotalVenda;
+end;
+
+procedure TFrmPDV.CalculaTotalVenda;
+var
+  valorTotal: double;
+begin
+  valorTotal := 0;
+
+  while not FDMemTable1.Eof do
+  begin
+    valorTotal := valorTotal + FDMemTable1ValorTotal.AsCurrency;
+    FDMemTable1.Next;
+  end;
+  FDMemTable1.First;
+
+  lblTotalVenda.Caption := FormatFloat('R$ #.00', valorTotal);
 end;
 
 procedure TFrmPDV.imgEmpresaClick(Sender: TObject);
