@@ -36,7 +36,6 @@ object FrmLogin: TFrmLogin
       Color = 4868682
       ParentBackground = False
       TabOrder = 0
-      ExplicitWidth = 249
       object lblTituloSistema: TLabel
         AlignWithMargins = True
         Left = 48
@@ -134,8 +133,6 @@ object FrmLogin: TFrmLogin
       Color = 6118749
       ParentBackground = False
       TabOrder = 1
-      ExplicitTop = 418
-      ExplicitWidth = 249
       object pnlRSociais: TPanel
         AlignWithMargins = True
         Left = 5
@@ -151,7 +148,6 @@ object FrmLogin: TFrmLogin
         Color = 5592405
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = -19
         object imgRSociais: TImage
           AlignWithMargins = True
           Left = 3
@@ -238,7 +234,6 @@ object FrmLogin: TFrmLogin
         Color = 5592405
         ParentBackground = False
         TabOrder = 1
-        ExplicitLeft = 116
         object imgContatos: TImage
           AlignWithMargins = True
           Left = 3
@@ -282,7 +277,6 @@ object FrmLogin: TFrmLogin
           Color = 5395026
           ParentBackground = False
           TabOrder = 0
-          ExplicitTop = 8
           object lblTituloContato: TLabel
             AlignWithMargins = True
             Left = 3
@@ -318,8 +312,6 @@ object FrmLogin: TFrmLogin
         Color = 5592405
         ParentBackground = False
         TabOrder = 2
-        ExplicitLeft = 269
-        ExplicitTop = 13
         object imgRemoto: TImage
           AlignWithMargins = True
           Left = 3
@@ -367,7 +359,6 @@ object FrmLogin: TFrmLogin
           Color = 5395026
           ParentBackground = False
           TabOrder = 0
-          ExplicitTop = 8
           object lblTituloRemoto: TLabel
             AlignWithMargins = True
             Left = 3
@@ -397,10 +388,6 @@ object FrmLogin: TFrmLogin
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitLeft = 128
-      ExplicitTop = 144
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       object imgLogoEmpresa: TImage
         Left = 0
         Top = 0
@@ -554,8 +541,6 @@ object FrmLogin: TFrmLogin
     Color = clWhite
     ParentBackground = False
     TabOrder = 1
-    ExplicitLeft = 249
-    ExplicitWidth = 451
     object CardPanel_DadosLogin: TCardPanel
       Left = 0
       Top = 0
@@ -566,7 +551,6 @@ object FrmLogin: TFrmLogin
       BevelOuter = bvNone
       Caption = 'CardPanel_DadosLogin'
       TabOrder = 0
-      ExplicitWidth = 451
       object card_login: TCard
         Left = 0
         Top = 0
@@ -575,7 +559,6 @@ object FrmLogin: TFrmLogin
         Caption = 'card_login'
         CardIndex = 0
         TabOrder = 0
-        ExplicitWidth = 451
         object pnlInfoLogin: TPanel
           Left = 64
           Top = 65
@@ -701,7 +684,6 @@ object FrmLogin: TFrmLogin
           Color = 16053492
           ParentBackground = False
           TabOrder = 1
-          ExplicitWidth = 451
         end
       end
     end

@@ -59,7 +59,6 @@ type
     lblPDV: TLabel;
     imgPDVAmarela: TImage;
     procedure imgLogoBrancaMouseEnter(Sender: TObject);
-    procedure imgLogoBrancaMouseLeave(Sender: TObject);
     procedure imgLogoAmarelaClick(Sender: TObject);
     procedure imgUsuarioBrancoMouseEnter(Sender: TObject);
     procedure imgUsuarioAmareloMouseLeave(Sender: TObject);
@@ -77,7 +76,8 @@ type
     procedure imgPDVClick(Sender: TObject);
     procedure lblPDVClick(Sender: TObject);
     procedure imgPDVMouseEnter(Sender: TObject);
-    procedure imgPDVMouseLeave(Sender: TObject);
+    procedure imgPDVAmarelaMouseLeave(Sender: TObject);
+    procedure imgLogoAmarelaMouseLeave(Sender: TObject);
   private
     { Private declarations }
   public
@@ -141,16 +141,16 @@ begin
     SplitView1.Open;
 end;
 
+procedure TFrmMenuPrincipal.imgLogoAmarelaMouseLeave(Sender: TObject);
+begin
+  imgLogoBranca.Visible := true;
+  imgLogoAmarela.Visible := false;
+end;
+
 procedure TFrmMenuPrincipal.imgLogoBrancaMouseEnter(Sender: TObject);
 begin
   imgLogoBranca.Visible := false;
   imgLogoAmarela.Visible := true;
-end;
-
-procedure TFrmMenuPrincipal.imgLogoBrancaMouseLeave(Sender: TObject);
-begin
-  imgLogoBranca.Visible := true;
-  imgLogoAmarela.Visible := false;
 end;
 
 procedure TFrmMenuPrincipal.imgLogoutClick(Sender: TObject);
@@ -159,6 +159,13 @@ begin
     FreeAndNil(FrmMenuPrincipal);
 
   FrmLogin.Show;
+end;
+
+procedure TFrmMenuPrincipal.imgPDVAmarelaMouseLeave(Sender: TObject);
+begin
+  lblPDV.Font.Color := clWhite;
+  imgPDV.Visible := true;
+  imgPDVAmarela.Visible := false;
 end;
 
 procedure TFrmMenuPrincipal.imgPDVClick(Sender: TObject);
@@ -173,13 +180,6 @@ begin
   lblPDV.Font.Color := clYellow;
   imgPDV.Visible := false;
   imgPDVAmarela.Visible := true;
-end;
-
-procedure TFrmMenuPrincipal.imgPDVMouseLeave(Sender: TObject);
-begin
-  lblPDV.Font.Color := clWhite;
-  imgPDV.Visible := true;
-  imgPDVAmarela.Visible := false;
 end;
 
 procedure TFrmMenuPrincipal.imgUsuarioAmareloClick(Sender: TObject);
